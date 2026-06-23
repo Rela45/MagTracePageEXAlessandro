@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0971c54f11844e6db9723324aaf4accc" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="MagTraceModel.C__LavorazioniFasi_Contenitori" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Accessi" Width="1.5" PointX="3.75" PointY="189" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Allevatori" Width="1.5" PointX="26.25" PointY="199.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Aree" Width="1.5" PointX="12" PointY="147.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Articoli" Width="1.5" PointX="6" PointY="167.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Articoli_InCelleLavorazione" Width="1.5" PointX="14.25" PointY="189.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ArticoliBarcode" Width="1.5" PointX="11.25" PointY="165.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ArticoliComposizioneiCasher" Width="1.5" PointX="8.25" PointY="308.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ArticoliConfezionamenti" Width="1.5" PointX="17.25" PointY="189" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ArticoliContenitori_Risultati" Width="1.5" PointX="8.25" PointY="330.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ArticoliContenitori_Vincoli" Width="1.5" PointX="8.25" PointY="346.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ArticoliConversioneUm" Width="1.5" PointX="11.25" PointY="189" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ArticoliDatiAggiuntivi" Width="1.5" PointX="20.25" PointY="175.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_AspettoEsterioreBeni" Width="1.5" PointX="23.25" PointY="221.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Bilance" Width="1.5" PointX="18" PointY="145.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Cassa" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Causali_Trasp" Width="1.5" PointX="18" PointY="209" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_CausaliMagazzino" Width="1.5" PointX="18" PointY="211.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Celle" Width="1.5" PointX="6" PointY="155.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Celle_Aree" Width="1.5" PointX="39" PointY="187.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Clienti" Width="1.5" PointX="1.5" PointY="218.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Clienti_Anag_Lavorazioni" Width="1.5" PointX="30.75" PointY="195.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Clienti_Destinazioni" Width="1.5" PointX="1.5" PointY="266.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Clienti_LayoutEtichette" Width="1.5" PointX="31" PointY="198.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Clienti_Listini" Width="1.5" PointX="15" PointY="153.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Clienti_ListiniArticoli" Width="1.5" PointX="17.25" PointY="165" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ClientiDatiAggiuntivi" Width="1.5" PointX="3.75" PointY="226" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Confezionamenti" Width="1.5" PointX="9.75" PointY="201.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ConfezionamentiConfig" Width="1.5" PointX="12" PointY="200.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ConfezionamentiConfig_Layout" Width="1.5" PointX="14.25" PointY="200.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ConfezionamentiConfigArtInOut" Width="1.5" PointX="17.25" PointY="173.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ConfezionamentiConfigImb" Width="1.5" PointX="14.25" PointY="163.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_ContenitoriMobili" Width="1.5" PointX="20.75" PointY="153" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Costi" Width="1.5" PointX="13.5" PointY="119" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Coupon" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Decodifica_Articoli" Width="1.5" PointX="20.25" PointY="182.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Filiere" Width="1.5" PointX="12" PointY="212.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Fornitori" Width="1.5" PointX="1.5" PointY="252.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Gm" Width="1.5" PointX="3.75" PointY="166.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_IVA" Width="1.5" PointX="0.75" PointY="146" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lav_SezImb" Width="1.5" PointX="38.75" PointY="177.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni" Width="1.5" PointX="10.5" PointY="136" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_ArtOutPerAltreLav" Width="1.5" PointX="20.25" PointY="163.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Confezionamenti" Width="1.5" PointX="15" PointY="148.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_ConfezionamentiArticoliInOut" Width="1.5" PointX="17.25" PointY="177" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_ConfezionamentiArticoliInOutImballi" Width="1.5" PointX="29.5" PointY="186.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_ConfSezionamento" Width="1.5" PointX="12.75" PointY="143.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_ContSezionamento" Width="1.5" PointX="8.25" PointY="188.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Costi" Width="1.5" PointX="15.75" PointY="138.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Destinazione" Width="1.5" PointX="8.25" PointY="162.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Destinazione_Esecuzione" Width="1.5" PointX="10.5" PointY="159.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Etichettatura" Width="1.5" PointX="15" PointY="207" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_EtichettaturaArticoliInOut" Width="1.5" PointX="17.25" PointY="181.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_EtichettaturaArticoliInOutImballi" Width="1.5" PointX="28.5" PointY="166" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Impasti" Width="1.5" PointX="9" PointY="205.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_ImpastiAdditivi" Width="1.5" PointX="23.25" PointY="190.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_ImpastiAdditiviQtaVariabili" Width="1.5" PointX="25.5" PointY="191.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_ImpastiArticoliInOut" Width="1.5" PointX="11.25" PointY="185.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Insacchi" Width="1.5" PointX="18" PointY="216.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_InsacchiArticoliInOut" Width="1.5" PointX="20.25" PointY="187.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_InsacchiArticoliInOutImballi" Width="1.5" PointX="33.5" PointY="179" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_SdlSezionamento" Width="1.5" PointX="8.25" PointY="185.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Sezionamento" Width="1.5" PointX="32.5" PointY="171.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_Vasche" Width="1.5" PointX="12.75" PointY="139.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_VascheArticoliInOut" Width="1.5" PointX="11.25" PointY="169" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lavorazioni_VascheArticoliInOutImballi" Width="1.5" PointX="25.5" PointY="181.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_LavorazioniComplete" Width="1.5" PointX="8.25" PointY="124.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_LavorazioniCompleteDettagli" Width="1.5" PointX="12.75" PointY="134.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_LavorazioniTipiDestinazioni_Confezionamenti" Width="1.5" PointX="6" PointY="163" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_LavorazioniTipiLav" Width="1.5" PointX="8.25" PointY="137.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_LavorazioniTipiOp" Width="1.5" PointX="8.25" PointY="159.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Linea" Width="1.5" PointX="9" PointY="208.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_LineaArticoliIngresso" Width="1.5" PointX="11.25" PointY="193.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_LineaArticoliIngresso_Sezionamenti" Width="1.5" PointX="13.5" PointY="197.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Lingue" Width="1.5" PointX="1.5" PointY="245.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Magazzini" Width="1.5" PointX="1.5" PointY="232.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_MagazziniAnag_CausaliMagazzino" Width="1.5" PointX="20.25" PointY="223.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Media" Width="1.5" PointX="8.25" PointY="382.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_MiaAzienda" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Operatori" Width="1.5" PointX="1.5" PointY="182.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Plc" Width="1.5" PointX="18" PointY="149.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Postazioni" Width="1.5" PointX="44.25" PointY="170.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Pv" Width="1.5" PointX="1.5" PointY="238.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Reparti" Width="1.5" PointX="1.5" PointY="212" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_RepartiBilance" Width="1.5" PointX="18" PointY="152.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Ricette" Width="1.5" PointX="15" PointY="210.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Ricette_AnagArticoliFiniti" Width="1.5" PointX="28.5" PointY="191.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_RicetteDettagli" Width="1.5" PointX="14.25" PointY="192.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_RicetteDettagli_ListaModificabili" Width="1.5" PointX="19.5" PointY="193.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_RicetteImballi" Width="1.5" PointX="17.25" PointY="185.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Riga0" Width="1.5" PointX="13" PointY="122.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Serbatoi" Width="1.5" PointX="20.25" PointY="146" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Stampanti" Width="1.5" PointX="10.5" PointY="142.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_TabellaConversioneUm" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Tare" Width="1.5" PointX="3.75" PointY="180.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Tipo_Barcode" Width="1.5" PointX="9" PointY="156.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_TipoDocumento" Width="1.5" PointX="1.5" PointY="260.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Trasportatori" Width="1.5" PointX="26.25" PointY="203.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Anag_Um" Width="1.5" PointX="0.75" PointY="175.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.CaloPeso" Width="1.5" PointX="41.25" PointY="172.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.CambioArticolo" Width="1.5" PointX="51.75" PointY="173.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.CartonePallets" Width="1.5" PointX="46.5" PointY="189.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.CartonePallets_Dettagli" Width="1.5" PointX="8.25" PointY="191.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.CartonePalletsConfig" Width="1.5" PointX="46.5" PointY="155.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ConfDinamico" Width="1.5" PointX="28.5" PointY="195.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ConfDinamico_Conferimenti" Width="1.5" PointX="30.75" PointY="180.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Conferimenti" Width="1.5" PointX="22.5" PointY="167.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Conferimenti_MultiEtik" Width="1.5" PointX="24.75" PointY="195.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Config_LottiMexal" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ConfigurazioniPostazioni" Width="1.5" PointX="46.5" PointY="165.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ContabilitaCassa" Width="1.5" PointX="0.75" PointY="138.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ContabilitaCassa_Dettagli" Width="1.5" PointX="3" PointY="146.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Contenitori" Width="1.5" PointX="36" PointY="173.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Contenitori_Dettagli" Width="1.5" PointX="48.75" PointY="173.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.CustomResources" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.Ddt_Acquisto_Vivi" Width="1.5" PointX="28.5" PointY="200.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Ddt_Acquisto_Vivi_Dettagli" Width="1.5" PointX="30.75" PointY="177.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.DdtAcquisto" Width="1.5" PointX="12" PointY="205.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.DdtAcquisto_Dettagli" Width="1.5" PointX="14.25" PointY="166.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.DdtAcquisto_Dettagli_MultiEtik" Width="1.5" PointX="16.5" PointY="157.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.DriverBilance" Width="1.5" PointX="9" PointY="218.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.EsecuzioneUnioneLotti" Width="1.5" PointX="20.25" PointY="197.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.EsecuzioneUnioneLotti_Dettagli" Width="1.5" PointX="41.25" PointY="178.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Fatture" Width="1.5" PointX="0.75" PointY="204.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Fatture_Dettagli" Width="1.5" PointX="3" PointY="170.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ImpSeurop" Width="1.5" PointX="3.75" PointY="219.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ImpSeuropDettagli" Width="1.5" PointX="6" PointY="215.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.InAreaLavorazione" Width="1.5" PointX="41.25" PointY="184.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.InAreaLavorazione_ContenitoriRiutilizzabili" Width="1.5" PointX="43.5" PointY="181.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.InfoImportatore" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.InParzializzazione" Width="1.5" PointX="38.25" PointY="180.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.InParzializzazione_ContenitoriRiutilizzabili" Width="1.5" PointX="43.5" PointY="173.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.InParzializzazione_Esecuzione" Width="1.5" PointX="46.5" PointY="195.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.InVendita" Width="1.5" PointX="38.25" PointY="273.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Inventario" Width="1.5" PointX="0.75" PointY="172.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Inventario_Dettagli" Width="1.5" PointX="3" PointY="177" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.KeyIdArticoliInBilance" Width="1.5" PointX="8.25" PointY="384.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.KeyIdArticoliInBilance_Plu" Width="1.5" PointX="10.5" PointY="275.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Lavorazioni" Width="1.5" PointX="10.5" PointY="127.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi" Width="1.5" PointX="12.75" PointY="125.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ArtOutPerAltreLav" Width="1.5" PointX="23.25" PointY="163" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Carrelli" Width="1.5" PointX="20.75" PointY="155.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_CarrelliDettagli" Width="1.5" PointX="23" PointY="155.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Confezionamenti" Width="1.5" PointX="6" PointY="196.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ConfezionamentiArtIN" Width="1.5" PointX="35.75" PointY="182.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ConfezionamentiArtOUT" Width="1.5" PointX="8.25" PointY="182.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ConfezionamentiDriverBilance" Width="1.5" PointX="11.25" PointY="196.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Confezionamento_Carrelli" Width="1.5" PointX="30.25" PointY="183.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ConfezionamentoD" Width="1.5" PointX="12" PointY="216.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ConfezionamentoDArtOut" Width="1.5" PointX="14.25" PointY="175.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ConfezionamentoDArtOutDettagli" Width="1.5" PointX="16.5" PointY="196.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ConfezionamentoDImballi" Width="1.5" PointX="27.75" PointY="178.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ConfSezionamento" Width="1.5" PointX="15" PointY="128.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ContSezionamento" Width="1.5" PointX="8.25" PointY="172.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Costi" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Destinazione" Width="1.5" PointX="25.25" PointY="168.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Destinazione_Esecuzione" Width="1.5" PointX="27.5" PointY="170" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Impasti" Width="1.5" PointX="25.25" PointY="175.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ImpastiAdditivi" Width="1.5" PointX="8.25" PointY="194.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_ImpastiAdditiviLotti" Width="1.5" PointX="22.5" PointY="195.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_IngressoLotti" Width="1.5" PointX="38.25" PointY="168.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Insacco" Width="1.5" PointX="14.25" PointY="182.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_InsaccoImballi" Width="1.5" PointX="17.25" PointY="193.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_InsaccoImballiLotti" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Ricette" Width="1.5" PointX="32.5" PointY="184" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Ricette_Eseguite" Width="1.5" PointX="48.75" PointY="179.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Ricette_MultiEtik" Width="1.5" PointX="34.75" PointY="223.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_SdlSezionamento" Width="1.5" PointX="11.25" PointY="162.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Sezionamento" Width="1.5" PointX="31.5" PointY="166" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_Vasche" Width="1.5" PointX="15" PointY="133.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_VascheArtIn" Width="1.5" PointX="17.25" PointY="160.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_VascheArtOut" Width="1.5" PointX="20.25" PointY="166.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_VascheFasiSecondarie" Width="1.5" PointX="11.25" PointY="181" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_VascheImballi" Width="1.5" PointX="27.75" PointY="182.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasi_VascheIngredienti" Width="1.5" PointX="27.5" PointY="174.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasiCustom" Width="1.5" PointX="8.25" PointY="127.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LavorazioniFasiCustom_Dettagli" Width="1.5" PointX="17.75" PointY="133.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LetturaNuo" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ListaTx" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.Listini" Width="1.5" PointX="6" PointY="189.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Listini_Associazione" Width="1.5" PointX="8.25" PointY="211.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ListiniDettagli" Width="1.5" PointX="8.25" PointY="175.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.ListiniDettagli_Media" Width="1.5" PointX="10.5" PointY="278.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LogMigrations" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LottiInCucina" Width="1.5" PointX="11.25" PointY="172.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LottiInCucina_Dettagli" Width="1.5" PointX="27" PointY="186.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.LottoUnicoAperto" Width="1.5" PointX="14.25" PointY="158.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.MaschereTr" Width="1.5" PointX="3.75" PointY="184.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.MaschereTr_Campi" Width="1.5" PointX="6" PointY="199.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.MaschereTr_Campi_Lista" Width="1.5" PointX="8.25" PointY="215.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.MovimentiMagazzino" Width="1.5" PointX="23.25" PointY="199.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Nazioni" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Nuo" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoConfezionamentiD" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoContenitori" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoDestinazioni" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoFusioniNuo" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoImpasti" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoInsacchi" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoMultiEtichette" Width="1.5" PointX="2.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoMultiEtichetteCartone" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoOrdini" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoParzializzazioni" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoRicette" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoSezionamenti" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoSpedizioni" Width="1.5" PointX="8.75" PointY="12.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoTotalizzazione" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.NuoVasche" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Ordini" Width="1.5" PointX="18" PointY="200.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Ordini_DDT_Fatture" Width="1.5" PointX="51" PointY="196" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Ordini_Dettagli" Width="1.5" PointX="25.5" PointY="159.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Ordini_Dettagli_Note" Width="1.5" PointX="20.25" PointY="214.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.PoolDiStampa" Width="1.5" PointX="27.75" PointY="161.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.PoolExportedToMTRepo" Width="1.5" PointX="22.5" PointY="209.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.PreLavorazioni" Width="1.5" PointX="8.25" PointY="130.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.PreLavorazioniDatiDaSerb" Width="1.5" PointX="17.25" PointY="168.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.PreLavorazioniDettagli" Width="1.5" PointX="11.25" PointY="177.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.PrimaNota" Width="1.5" PointX="22.5" PointY="234.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Progressivi" Width="1.5" PointX="23.25" PointY="185.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Sezionali" Width="1.5" PointX="1.5" PointY="272.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Sezionamenti" Width="1.5" PointX="46.5" PointY="169.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.SezionamentiImballi" Width="1.5" PointX="44" PointY="177.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Spedizioni" Width="1.5" PointX="20.25" PointY="202.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Spedizioni_AspettoEsterioreBeni" Width="1.5" PointX="25.5" PointY="206.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Spedizioni_Dettagli" Width="1.5" PointX="48.75" PointY="191.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.SpedizioniAnag_Clienti" Width="1.5" PointX="22.5" PointY="215.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.StatiOrdini" Width="1.5" PointX="15.75" PointY="203.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Storico_Conferimenti" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Storico_Contenitori" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Storico_ContenitoriDettagli" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.Storico_InParzializzazioneEsecuzione" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Storico_LavorazioniFasiRicette" Width="1.5" PointX="14.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Storico_PesiPlc" Width="1.5" PointX="22.5" PointY="146.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Storico_RegistraQuantita" Width="1.5" PointX="3.75" PointY="192" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Storico_Sezionamenti" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.Tare" Width="1.5" PointX="20.75" PointY="158.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Tare_Dettagli" Width="1.5" PointX="23" PointY="150.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.TaskSchedule" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.TipoImportTrac" Width="1.5" PointX="1.5" PointY="263.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.TipoPagamento" Width="1.5" PointX="1.5" PointY="248.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.tmpConferimentiFluidi" Width="1.5" PointX="29.75" PointY="170.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.tmpConfigConferimentiFluidi" Width="1.5" PointX="27.5" PointY="154.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.tmpConfigConferimentiFluidiDettagli" Width="1.5" PointX="29.75" PointY="151.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.tmpInventario" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.tmpTrasferimentoInterno_Dettagli" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="MagTraceModel.tmpUscitaMerceManuale" Width="1.5" PointX="26" PointY="145.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Totalizzazione" Width="1.5" PointX="8.25" PointY="167.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.TracciabilitaAddizionale" Width="1.5" PointX="12" PointY="150.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.TracciabilitaAddizionale_Dettagli" Width="1.5" PointX="15.25" PointY="144.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Traduzioni_Anag_Riga0" Width="1.5" PointX="15.25" PointY="122.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.Traduzioni_Parole" Width="1.5" PointX="3.75" PointY="245.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.TransazioniBilanceRetail" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.TransazioniCasse" Width="1.5" PointX="8.25" PointY="387.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.TrasferimentoInterno" Width="1.5" PointX="31.5" PointY="161.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.TrasferimentoInterno_Dettagli" Width="1.5" PointX="33.75" PointY="166.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.UltimaTracciabilita" Width="1.5" PointX="16.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.UltimeNazioni" Width="1.5" PointX="16.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.UltimiArticoli" Width="1.5" PointX="16.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.UltimiClienti" Width="1.5" PointX="16.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MagTraceModel.UltimiFornitori" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MagTraceModel.FK_Accessi_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ddt_Acquisto_Vivi_Anag_Allevatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottoUnicoAperto_Anag_Aree" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_Anag_Gm" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_Anag_IVA" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_Anag_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_Anag_UM" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_Anag_UM1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_InCelleLavorazione_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_InCelleLavorazione_Anag_ArticoliTrasformato" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_MaschereTr" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliComposizioneiCasher_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliComposizioneiCasher_Anag_Articoli1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliConfezionamenti_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliContenitori_Risultati_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliContenitori_Risultati_Anag_Articoli1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliContenitori_Vincoli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliContenitori_Vincoli_Anag_Articoli1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliConversioneUm_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliDatiAggiuntivi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliEan_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_ListiniArticoli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ConfezionamentiConfigArtInOut_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ConfezionamentiConfigImb_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Decodifica_Articoli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lav_SezImb_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ArtOutPerAltreLav_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ConfezionamentiArticoliInOut_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ConfezionamentiArticoliInOutImballi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ContSezionamento_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Destinazione_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Destinazione_Anag_Articoli1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_EtichettaturaArticoliInOut_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_EtichettaturaArticoliInOutImballi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ImpastiAdditivi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ImpastiArticoliIn_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_InsacchiArticoliInOut_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_InsacchiArticoliInOutImballi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_SdlSezionamento_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Sezionamento_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Sezionamento_Anag_Articoli1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_VascheArticoliInOut_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_VascheArticoliInOutImballi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_LineaArticoliIngresso_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Media_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Ricette_AnagArticoliFiniti_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_RicetteDettagli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_RicetteDettagli_ListaModificabili_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_RicetteImballi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePallets_Dettagli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtAcquisto_Dettagli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_KeyIdArticoliInBilance_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_KeyIdArticoliInBilance_Plu_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ArtOutPerAltreLav_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiArtOUT_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoDArtOut_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ContSezionamento_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Destinazione_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Impasti_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ImpastiAdditivi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ImpastiAdditiviLotti_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Insacco_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_InsaccoImballi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_SdlSezionamento_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Sezionamento_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtIn_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtOut_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheFasiSecondarie_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheImballi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheIngredienti_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ListiniDettagli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottiInCucina_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottoUnicoAperto_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioniDatiDaSerb_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioniDettagli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Progressivi_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Totalizzazione_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TransazioniCasse_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_Dettagli_Anag_Articoli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Articoli_InCelleLavorazione_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliEan_Anag_Tipo_Barcode1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InCellaLavorazione_ContenitoriRiutilizzabili_Anag_ArticoliBarcode" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_ContenitoriRiutilizzabili_Anag_ArticoliBarcode" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliConfezionamenti_Anag_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Sezionamento_Anag_ArticoliConfezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Ricette_AnagArticoliFiniti_Anag_ArticoliConfezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Anag_ArticoliConfezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Sezionamento_Anag_ArticoliConfezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliConversioneUm_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliConversioneUm_Anag_Um2" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliDatiAggiuntivi_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ArticoliDatiAggiuntivi_Anag_RepartiBilance" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_AspettoEsterioreBeni_Anag_AspettoEsterioreBeni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Bilance_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Serbatoi_Anag_Bilance" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpUscitaMerceManuale_Anag_Bilance" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Anag_Causali" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_MagazziniAnag_CausaliMagazzino_Anag_CausaliMagazzino" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MovimentiMagazzino_Anag_CausaliMagazzino" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Anag_CausaliMagazzino" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Celle_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Celle_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Celle_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Celle_Aree_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Serbatoi_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InAreaLavorazione_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoD_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Destinazione_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Impasti_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Insacco_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtOut_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Listini_Associazione_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MovimentiMagazzino_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Totalizzazione_Anag_Celle" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InAreaLavorazione_Anag_Celle_Aree" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_Anag_Lavorazioni_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_Anag_Lingue" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_Destinazioni_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_LayoutEtichette_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_Listini_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_TipoPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ClientiDatiAggiuntivi_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Decodifica_Articoli_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Pv_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePallets_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ddt_Acquisto_Vivi_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Esecuzione_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Lavorazioni_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtOut_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Listini_Associazione_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ordini_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PrimaNota_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConfigConferimentiFluidi_Anag_Clienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_Anag_Lavorazioni_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Decodifica_Articoli_Anag_Clienti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePallets_Anag_Clienti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ddt_Acquisto_Vivi_Anag_Clienti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_Anag_Clienti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Esecuzione_Anag_Clienti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtOut_Anag_Clienti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PrimaNota_Anag_Clienti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConfigConferimentiFluidi_Anag_Clienti_Destinazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_LayoutEtichette_Anag_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_LayoutEtichette_Anag_LavorazioniTipiLav" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_ListiniArticoli_Anag_Clienti_Listini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Clienti_ListiniArticoli_Anag_UM" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ConfezionamentiConfig_Anag_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Confezionamenti_Anag_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Etichettatura_Anag_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ConfezionamentiConfig_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ConfezionamentiConfig_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ConfezionamentiConfig_Layout_Anag_ConfezionamentiConfig1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ConfezionamentiConfigArtInOut_Anag_ConfezionamentiConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_ConfezionamentiConfigImb_Anag_ConfezionamentiConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_CarrelliDettagli_Anag_ContenitoriMobili" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Costi_Anag_Costi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Decodifica_Articoli_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Decodifica_Articoli_MaschereTr" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Filiere_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Anag_Filiere" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtAcquisto_Dettagli_Anag_Filiere" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Fornitori_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Fornitori_Anag_TipoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Fornitori_TipoImportTrac" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Fornitori_TipoPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DttDiAcquisto_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ImpSeurop_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Listini_Associazione_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MovimentiMagazzino_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ordini_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PrimaNota_Anag_Fornitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Gm_Anag_Gm" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Gm_Anag_IVA" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Gm_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ContabilitaCassa_Dettagli_Anag_IVA" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DttDiAcquisto_Dettagli_Anag_IVA" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_Dettagli_Anag_IVA" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_Anag_IVA" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MovimentiMagazzino_Anag_IVA" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lav_SezImb_Anag_Lavorazioni_Sezionamento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_SezionamentiImballi_Anag_Lav_SezImb" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Anag_LavorazioniTipiLav" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ArtOutPerAltreLav_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Confezionamenti_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ConfSezionamento_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ContSezionamento_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Costi_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Destinazione_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Etichettatura_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Insacchi_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_SdlSezionamento_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Sezionamento_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Vasche_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_LavorazioniCompleteDettagli_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_LineaArticoliIngresso_Sezionamenti_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasiCustom_Dettagli_Anag_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Confezionamenti_Anag_Stampanti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ConfezionamentiArticoliInOut_Anag_Lavorazioni_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ConfezionamentiArticoliInOutImballi_Anag_Lavorazioni_ConfezionamentiArticoliInOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ConfezionamentiArticoliInOutImballi_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Destinazione_Anag_LavorazioniTipiDestinazioni_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Destinazione_Esecuzione_Anag_Lavorazioni_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Destinazione_Esecuzione_Anag_LavorazioniTipiOp" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_EtichettaturaArticoliInOut_Anag_Lavorazioni_Etichettatura" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_EtichettaturaArticoliInOutImballi_Anag_Lavorazioni_EtichettaturaArticoliInOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_EtichettaturaArticoliInOutImballi_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ImpastiAdditivi_Anag_Lavorazioni_Impasti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ImpastiArticoliIn_Anag_Lavorazioni_Impasti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ImpastiAdditivi_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_ImpastiAdditiviQtaVariabili_Anag_Lavorazioni_ImpastiAdditivi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_InsacchiArticoliInOut_Anag_Lavorazioni_Insacchi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_InsacchiArticoliInOut_Anag_Stampanti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_InsacchiArticoliInOut_Anag_Stampanti1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_InsacchiArticoliInOutImballi_Anag_Lavorazioni_InsacchiArticoliInOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_InsacchiArticoliInOutImballi_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Sezionamento_Anag_Lavorazioni_Sezionamento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Sezionamento_Anag_Stampanti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_Vasche_Anag_Stampanti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_VascheArticoliInOut_Anag_Lavorazioni_Vasche" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Vasche_Anag_Lavorazioni_Vasche" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_VascheArticoliInOutImballi_Anag_Lavorazioni_VascheArticoliInOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Lavorazioni_VascheArticoliInOutImballi_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_LavorazioniComplete_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_LavorazioniCompleteDettagli_Anag_LavorazioniComplete" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Lavorazioni_Anag_LavorazioniComplete" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioni_Anag_LavorazioniComplete" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Anag_LavorazioniTipiLav" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Destinazione_Esecuzione_Anag_LavorazioniTipiOp" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_LineaArticoliIngresso_Anag_Linea" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_LineaArticoliIngresso_Sezionamenti_Anag_LineaArticoliIngresso" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Traduzioni_Parole_Anag_Lingue" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Magazzini_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_MagazziniAnag_CausaliMagazzino_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Serbatoi_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtAcquisto_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtDiAcquisto_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConferimentiFluidi_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConferimentiFluidi_Anag_Magazzini1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_Anag_Magazzini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_Anag_Magazzini1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ListiniDettagli_Media_Anag_Media" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Operatori_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Operatori_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CambioArticolo_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePallets_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DttDiAcquisto_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_Dettagli_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ImpSeurop_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Anag_OperatoriPresaInCarico" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Esecuzione_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Lavorazioni_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Vasche_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtIn_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtOut_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottiInCucina_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottiInCucina_Dettagli_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottoUnicoAperto_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_OrdiniClienti_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PoolDiStampa_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioni_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Storico_RegistraPesi_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Tare_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConferimentiFluidi_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConfigConferimentiFluidi_Anag_Operatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_TrasferimentoInterno" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Serbatoi_Anag_Plc" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Storico_PesiPlc_Anag_Plc" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePalletsConfig_Anag_Postazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ConfigurazioniPostazioni_Anag_Postazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Anag_Postazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Reparti_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Serbatoi_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtAcquisto_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Lavorazioni_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_OrdiniClienti_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Progressivi_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionali_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Totalizzazione_Anag_Pv" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_RepartiBilance_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Ricette_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Tare_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Lavorazioni_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MaschereTr_Anag_Reparti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_Ricette_AnagArticoliFiniti_Anag_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_RicetteDettagli_Anag_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_RicetteDettagli_Anag_Ricette1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_RicetteImballi_Anag_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MovimentiMagazzino_Anag_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Progressivi_Anag_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Anag_RicetteDettagli_ListaModificabili_Anag_RicetteDettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Eseguite_Anag_RicetteDettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Eseguite_Anag_RicetteDettagli_ListaModificabili" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MaschereTr_Campi_Anag_Riga0" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TracciabilitaAddizionale_Dettagli_Anag_Riga0" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Traduzioni_Anag_Riga0_Anag_Riga0" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Anag_Serbatoi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Anag_Serbatoi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Storico_PesiPlc_Anag_Serbatoi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConferimentiFluidi_Anag_Serbatoi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConfigConferimentiFluidiDettagli_Anag_Serbatoi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePalletsConfig_Anag_Stampanti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePalletsConfig_Anag_Stampanti1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePalletsConfig_Anag_Stampanti2" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PoolDiStampa_Anag_Stampanti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Anag_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Esecuzione_Anag_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Anag_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Anag_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Anag_TipoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MovimentiMagazzino_Anag_TipoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionali_Anag_TipoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ddt_Acquisto_Vivi_Anag_Trasportatori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DttDiAcquisto_Dettagli_Anag_UM" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DttDiAcquisto_Dettagli_Anag_UM1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_Dettagli_Anag_UM" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Inventario_Dettagli_Anag_UM" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ImpastiAdditivi_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_InsaccoImballi_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ListiniDettagli_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioniDettagli_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_Anag_UM" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_Dettagli_Anag_Um" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_CartonePallets" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_InParzializzazione_Esecuzione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_LavorazioniFasi_ConfezionamentoDArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_LavorazioniFasi_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_LavorazioniFasi_Impasti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CaloPeso_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CambioArticolo_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CambioArticolo_Conferimenti1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CambioArticolo_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CambioArticolo_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CambioArticolo_TracciabilitaAddizionale1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePallets_Dettagli_CartonePallets" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_CartonePallets_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Esecuzione_CartonePallets" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Esecuzione_CartonePallets1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Esecuzione_CartonePallets2" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_CartonePallets" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ConfDinamico_Conferimenti_ConfDinamico" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ConfDinamico_Conferimenti_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_DdtAcquisto_Dettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_EsecuzioneUnioneLotti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Fatture" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_MaschereTr" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_MultiEtik_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Conferimenti_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Dettagli_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ddt_Acquisto_Vivi_Dettagli_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_Dettagli_EsecuzioneUnioneLotti_Dettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InCellaLavorazione_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiArtIN_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoDImballi_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Eseguite_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheImballi_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConferimentiFluidi_Conferimenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottiInCucina_Dettagli_Conferimenti_MultiEtik" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ContabilitaCassa_Dettagli_ContabilitaCassa" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Dettagli_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Dettagli_Contenitori1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Fatture" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_tmpConferimentiFluidi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_Dettagli_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InCellaLavorazione_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Eseguite_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConferimentiFluidi_Contenitori" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Dettagli_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Dettagli_LavorazioniFasi_ConfezionamentoDArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Dettagli_LavorazioniFasi_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Dettagli_LavorazioniFasi_Impasti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Contenitori_Dettagli_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ddt_Acquisto_Vivi_DdtAcquisto" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ddt_Acquisto_Vivi_Dettagli_Ddt_Acquisto_Vivi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtAcquisto_TipoImportTrac" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DttDiAcquisto_Dettagli_DttDiAcquisto" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConfigConferimentiFluidi_DdtAcquisto" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtAcquisto_Dettagli_MaschereTr" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtAcquisto_Dettagli_MultiEtik_DdtAcquisto_Dettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_DdtAcquisto_Dettagli_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiDriverBilance_DriverBilance" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_Dettagli_EsecuzioneUnioneLotti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_EsecuzioneUnioneLotti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_EsecuzioneUnioneLotti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_Dettagli_InParzializzazione_Esecuzione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_Dettagli_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_Dettagli_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_EsecuzioneUnioneLotti_Dettagli_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_Dettagli_Fatture" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_Sezionali" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Fatture_TipoPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_OrdiniClienti_DDT_Fatture_Fatture" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Fatture" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_Fatture" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Fatture" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ImpSeuropDettagli_ImpSeurop" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InCellaLavorazione_ContenitoriRiutilizzabili_InCellaLavorazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InCellaLavorazione_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InCellaLavorazione_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_ContenitoriRiutilizzabili_InParzializzazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_LavorazioniFasi_ConfezionamentiArtOUT" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_LavorazioniFasi_ConfezionamentoDArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InParzializzazione_Esecuzione_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_InParzializzazione_Esecuzione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_InParzializzazione_Esecuzione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_KeyIdArticoliInBilance" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_InVendita_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Inventario_Dettagli_Inventario" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_KeyIdArticoliInBilance_Plu_KeyIdArticoliInBilance" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Lavorazioni_LavorazioniFasiCustom" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Lavorazioni_PreLavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Lavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ArtOutPerAltreLav_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Carrelli_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Carrelli_LavorazioniFasi1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Confezionamenti_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoD_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfSezionamento_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ContSezionamento_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Destinazione_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Impasti_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ImpastiAdditivi_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Insacco_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_InsaccoImballi_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Eseguite_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_SdlSezionamento_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Sezionamento_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Vasche_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheFasiSecondarie_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ordini_Dettagli_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Totalizzazione_LavorazioniFasi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ArtOutPerAltreLav_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_LavorazioniFasi_ArtOutPerAltreLav" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_CarrelliDettagli_LavorazioniFasi_Carrelli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_CarrelliDettagli_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Confezionamento_Carrelli_LavorazioniFasi_CarrelliDettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Destinazione_LavorazioniFasi_CarrelliDettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Insacco_LavorazioniFasi_CarrelliDettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiArtIN_LavorazioniFasi_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiArtOUT_LavorazioniFasi_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiDriverBilance_LavorazioniFasi_Confezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiArtIN_LavorazioniFasi_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiArtIN_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiArtIN_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentiArtIN_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Confezionamento_Carrelli_LavorazioniFasi_ConfezionamentoD" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoD_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoDArtOut_LavorazioniFasi_ConfezionamentoD" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoDArtOut_Totalizzazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoDArtOut_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoDArtOutDettagli_LavorazioniFasi_ConfezionamentoDArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ConfezionamentoDImballi_LavorazioniFasi_ConfezionamentoDArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_LavorazioniFasi_ConfezionamentoDArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_LavorazioniFasi_ConfezionamentoDArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Destinazione_Esecuzione_LavorazioniFasi_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_LavorazioniFasi_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_LavorazioniFasi_Destinazione" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_LavorazioniFasi_Impasti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_LavorazioniFasi_Impasti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ImpastiAdditiviLotti_LavorazioniFasi_ImpastiAdditivi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_ImpastiAdditiviLotti_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_LavorazioniFasi_Insacco" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_LavorazioniFasi_VascheArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_IngressoLotti_TracciabilitaAddizionale1" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_LavorazioniFasi_IngressoLotti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_LavorazioniFasi_Insacco" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Eseguite_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_MultiEtik_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_LavorazioniFasi_Ricette" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Ricette_Eseguite_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_LavorazioniFasi_Ricette_MultiEtik" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_Sezionamento_LavorazioniFasi_Sezionamento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_LavorazioniFasi_Sezionamento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtIn_LavorazioniFasi_Vasche" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtOut_LavorazioniFasi_Vasche" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtIn_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtOut_LavorazioniFasi_VascheArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheArtOut_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheImballi_LavorazioniFasi_VascheArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheIngredienti_LavorazioniFasi_VascheArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_LavorazioniFasi_VascheArtOut" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheFasiSecondarie_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasi_VascheIngredienti_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LavorazioniFasiCustom_Dettagli_LavorazioniFasiCustom" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioni_LavorazioniFasiCustom" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Listini_Associazione_Listini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Listini_Listini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ListiniDettagli_Listini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ListiniDettagli_ListiniDettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_ListiniDettagli_Media_ListiniDettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ordini_Dettagli_ListiniDettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottiInCucina_Dettagli_LottiInCucina" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_LottoUnicoAperto_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MaschereTr_Campi_MaschereTr" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TracciabilitaAddizionale_MaschereTr" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MaschereTr_Campi_Lista_MaschereTr_Campi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_MovimentiMagazzino_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ordini_Dettagli_Note_Ordini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Ordini_TipoPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_OrdiniClienti_DDT_Fatture_OrdiniClienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_OrdiniClienti_Dettagli_OrdiniClienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_OrdiniClienti_StatiOrdini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_OrdiniClienti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConfigConferimentiFluidi_Ordini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_Ordini" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_OrdiniClienti_DDT_Fatture_Spedizioni_Dettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_Dettagli_Ordini_Dettagli" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PoolExportedToMTRepo_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioniDatiDaSerb_PreLavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioniDettagli_PreLavorazioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PreLavorazioniDatiDaSerb_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_PrimaNota_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Progressivi_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Sezionali" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Sezionamenti_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_SezionamentiImballi_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_Sezionamenti" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_AspettoEsterioreBeni_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_SpedizioniAnag_Clienti_Spedizioni" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Spedizioni_Dettagli_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Tare_Dettagli_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpUscitaMerceManuale_Tare" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConferimentiFluidi_tmpConfigConferimentiFluidi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_tmpConfigConferimentiFluidiDettagli_tmpConfigConferimentiFluidi" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_Totalizzazione_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TracciabilitaAddizionale_Dettagli_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_Dettagli_TracciabilitaAddizionale" ManuallyRouted="false" />
+        <AssociationConnector Association="MagTraceModel.FK_TrasferimentoInterno_Dettagli_TrasferimentoInterno" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
