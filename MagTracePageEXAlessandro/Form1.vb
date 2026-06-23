@@ -22,6 +22,7 @@ Public Class Form1
         End If
         lvwArticoli.Enabled = True
         grpDetails.Enabled = False
+#Region "caricamento CBO"
         'CARICAMENTO CBO
         Using db As New MagTraceEntities()
 
@@ -30,23 +31,32 @@ Public Class Form1
             cboReparto.DataSource = reparti
             cboReparto.DisplayMember = "strDescrizione"
             cboReparto.ValueMember = "KeyId"
+            cboFiltroReparto.DataSource = reparti
+            cboFiltroReparto.DisplayMember = "strDescrizione"
+            cboFiltroReparto.ValueMember = "KeyId"
 
             Dim categorie = db.Anag_Gm.ToList()
             categorie.Insert(0, New Anag_Gm With {.KeyId = 0, .strDescrizione = ""})
             cboCategoria.DataSource = categorie
             cboCategoria.DisplayMember = "strDescrizione"
             cboCategoria.ValueMember = "KeyId"
+            cboFiltroCategoria.DataSource = categorie
+            cboFiltroCategoria.DisplayMember = "strDescrizione"
+            cboFiltroCategoria.ValueMember = "KeyId"
 
             Dim um = db.Anag_Um.ToList()
             um.Insert(0, New Anag_Um With {.KeyId = 0, .codeUm = ""})
             cboUm.DataSource = um
             cboUm.DisplayMember = "codeUm"
             cboUm.ValueMember = "KeyId"
-
+            cboFiltroUm.DataSource = um
+            cboFiltroUm.DisplayMember = "codeUm"
+            cboFiltroUm.ValueMember = "KeyId"
         End Using
+#End Region
 
-        RecoLoad()
     End Sub
+
     ''' <summary>
     ''' Serve per caricare i record della tabella anag_articoli nella listview
     ''' </summary>
@@ -83,6 +93,7 @@ Public Class Form1
         lvwArticoli.Enabled = False
         grpDetails.Enabled = True
     End Sub
+
     Private Sub ClearBoxes()
         tbxCodiceArticolo.Clear()
         tbxDescrizione.Clear()
@@ -90,6 +101,7 @@ Public Class Form1
         cboUm.SelectedIndex = 0
         cboReparto.SelectedIndex = 0
     End Sub
+
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If Not edit = True Then
             Using db As New MagTraceEntities()
@@ -108,21 +120,21 @@ Public Class Form1
                     Exit Sub
                 End If
 
-                If cboCategoria.SelectedValue > 0 Then
+                If cboCategoria.SelectedIndex > 0 Then
                     articolo.KeyIdAnag_Gm = CInt(cboCategoria.SelectedValue)
                 Else
                     MessageBox.Show("Categoria obbligatoria")
                     Exit Sub
                 End If
 
-                If cboUm.SelectedValue > 0 Then
+                If cboUm.SelectedIndex > 0 Then
                     articolo.KeyIdAnag_Um = CInt(cboUm.SelectedValue)
                 Else
                     MessageBox.Show("UM obbligatoria")
                     Exit Sub
                 End If
 
-                If cboReparto.SelectedValue > 0 Then
+                If cboReparto.SelectedIndex > 0 Then
                     articolo.KeyIdAnag_Reparti = CInt(cboReparto.SelectedValue)
                 Else
                     MessageBox.Show("Reparto obbligatorio")
@@ -263,5 +275,122 @@ Public Class Form1
 
     Private Sub ImpostazioniToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImpostazioniToolStripMenuItem.Click
         Form2.ShowDialog()
+    End Sub
+
+    Private Sub tbxFiltroDescrizione_TextChanged(sender As Object, e As EventArgs) Handles tbxFiltroDescrizione.TextChanged
+        AggiornaFiltro()
+    End Sub
+
+    Private Sub FiltraArticoli()
+
+        Using db As New MagTraceEntities()
+
+            Dim records = db.Anag_Articoli.Where(Function(x) x.bitEliminato = False).OrderByDescending(Function(x) x.KeyId).Take(200).Select(Function(x) New With {
+                .reparto = x.Anag_Reparti.strDescrizione,
+                .um = x.Anag_Um.codeUm,
+                .categoria = x.Anag_Gm.strDescrizione,
+                .codice = x.strCodice,
+                .descrizione = x.strDescrizione,
+                .id = x.KeyId,
+                .categoriaid = x.KeyIdAnag_Gm,
+                .repartoid = x.KeyIdAnag_Reparti,
+                .umid = x.KeyIdAnag_Um
+            })
+
+
+            If tbxFiltroDescrizione.Text.Trim() <> "" Then
+
+                Dim desc = tbxFiltroDescrizione.Text.Trim()
+
+                records = records.Where(Function(x) x.descrizione.Contains(desc))
+
+            End If
+
+            If CInt(cboFiltroCategoria.SelectedValue) > 0 Then
+
+                Dim categoria = CInt(cboFiltroCategoria.SelectedValue)
+
+                records = records.Where(Function(x) x.categoriaid = categoria)
+
+            End If
+
+            If CInt(cboFiltroReparto.SelectedValue) > 0 Then
+
+                Dim reparto = CInt(cboFiltroReparto.SelectedValue)
+
+                records = records.Where(Function(x) x.repartoid = reparto)
+
+            End If
+
+            If CInt(cboFiltroUm.SelectedValue) > 0 Then
+
+                Dim um = CInt(cboFiltroUm.SelectedValue)
+
+                records = records.Where(Function(x) x.umid = um)
+
+            End If
+
+            If tbxFiltroCodiceArticolo.Text.Trim() <> "" Then
+
+                Dim codice = tbxFiltroCodiceArticolo.Text.Trim()
+
+                records = records.Where(Function(x) x.codice.Contains(codice))
+
+            End If
+
+
+            lvwArticoli.Items.Clear()
+
+            For Each r In records
+                Dim articoli As New ListViewItem(r.reparto)          'str descrizione della tabella reparto e str descrizione della tabella UM
+                articoli.SubItems.Add(r.categoria)
+                articoli.SubItems.Add(r.codice)
+                articoli.SubItems.Add(r.descrizione)
+                If Not r.um Is Nothing Then
+                    articoli.SubItems.Add(r.um)
+                Else
+                    articoli.SubItems.Add("NULL")
+                End If
+                articoli.Tag = r.id
+                lvwArticoli.Items.Add(articoli)
+            Next
+
+        End Using
+
+    End Sub
+
+    Private Sub AggiornaFiltro()
+
+        Dim testo = tbxFiltroDescrizione.Text.Trim()
+        Dim codice = tbxFiltroCodiceArticolo.Text.Trim()
+        If testo.Length >= 3 OrElse
+           cboFiltroCategoria.SelectedIndex > 0 OrElse
+           cboFiltroReparto.SelectedIndex > 0 OrElse
+           cboFiltroUm.SelectedIndex > 0 Then
+
+            FiltraArticoli()
+
+        Else
+
+            RecoLoad()
+
+        End If
+
+    End Sub
+
+    Private Sub cboFiltroCategoria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroCategoria.SelectedIndexChanged
+        AggiornaFiltro()
+    End Sub
+
+    Private Sub cboFiltroReparto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroReparto.SelectedIndexChanged
+        AggiornaFiltro()
+    End Sub
+
+    Private Sub cboFiltroUm_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroUm.SelectedIndexChanged
+        AggiornaFiltro()
+    End Sub
+
+    Private Sub tbxFiltroCodiceArticolo_TextChanged(sender As Object, e As EventArgs) Handles tbxFiltroCodiceArticolo.TextChanged
+        AggiornaFiltro()
     End Sub
 End Class
