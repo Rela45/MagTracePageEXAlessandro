@@ -48,6 +48,7 @@ Partial Class Form1
         Me.btnModify = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.grpFilter = New System.Windows.Forms.GroupBox()
+        Me.btnFilterCancel = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tbxFiltroDescrizione = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -321,9 +322,10 @@ Partial Class Form1
         '
         'grpFilter
         '
-        Me.grpFilter.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.grpFilter.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpFilter.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.grpFilter.Controls.Add(Me.btnFilterCancel)
         Me.grpFilter.Controls.Add(Me.Label1)
         Me.grpFilter.Controls.Add(Me.tbxFiltroDescrizione)
         Me.grpFilter.Controls.Add(Me.Label2)
@@ -336,10 +338,20 @@ Partial Class Form1
         Me.grpFilter.Controls.Add(Me.cboFiltroReparto)
         Me.grpFilter.Location = New System.Drawing.Point(12, 27)
         Me.grpFilter.Name = "grpFilter"
-        Me.grpFilter.Size = New System.Drawing.Size(940, 121)
+        Me.grpFilter.Size = New System.Drawing.Size(940, 140)
         Me.grpFilter.TabIndex = 12
         Me.grpFilter.TabStop = False
         Me.grpFilter.Text = "Filtra"
+        '
+        'btnFilterCancel
+        '
+        Me.btnFilterCancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnFilterCancel.Location = New System.Drawing.Point(793, 111)
+        Me.btnFilterCancel.Name = "btnFilterCancel"
+        Me.btnFilterCancel.Size = New System.Drawing.Size(104, 23)
+        Me.btnFilterCancel.TabIndex = 12
+        Me.btnFilterCancel.Text = "Annulla"
+        Me.btnFilterCancel.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -505,4 +517,5 @@ Partial Class Form1
     Friend WithEvents cboFiltroCategoria As ComboBox
     Friend WithEvents cboFiltroUm As ComboBox
     Friend WithEvents cboFiltroReparto As ComboBox
+    Friend WithEvents btnFilterCancel As Button
 End Class

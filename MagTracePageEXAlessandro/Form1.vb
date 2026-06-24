@@ -6,6 +6,8 @@ Public Class Form1
     Dim articolo As New Anag_Articoli()
     Dim edit As Boolean = False
     Dim settings As New SettingsData
+    Dim filtroAttivo As Boolean = False
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If System.IO.File.Exists("Settings.xml") Then
             Dim xs As New XmlSerializer(GetType(SettingsData))
@@ -54,7 +56,7 @@ Public Class Form1
             cboFiltroUm.ValueMember = "KeyId"
         End Using
 #End Region
-
+        RecoLoad()
     End Sub
 
     ''' <summary>
@@ -63,28 +65,96 @@ Public Class Form1
     Private Sub RecoLoad()
         Using db As New MagTraceEntities()
 
-            Dim records = db.Anag_Articoli.Where(Function(x) x.bitEliminato = False).OrderByDescending(Function(x) x.KeyId).Take(200).Select(Function(x) New With {
-                .reparto = x.Anag_Reparti.strDescrizione,
-                .um = x.Anag_Um.codeUm,
-                .categoria = x.Anag_Gm.strDescrizione,
-                .codice = x.strCodice,
-                .descrizione = x.strDescrizione,
-                .id = x.KeyId
-            })
+            '    Dim records = db.Anag_Articoli.Where(Function(x) x.bitEliminato = False).OrderByDescending(Function(x) x.KeyId).Take(200).Select(Function(x) New With {
+            '    .reparto = x.Anag_Reparti.strDescrizione,
+            '    .um = x.Anag_Um.codeUm,
+            '    .categoria = x.Anag_Gm.strDescrizione,
+            '    .codice = x.strCodice,
+            '    .descrizione = x.strDescrizione,
+            '    .id = x.KeyId
+            '})
 
-            For Each r In records
-                Dim articoli As New ListViewItem(r.reparto)          'str descrizione della tabella reparto e str descrizione della tabella UM
-                articoli.SubItems.Add(r.categoria)
-                articoli.SubItems.Add(r.codice)
-                articoli.SubItems.Add(r.descrizione)
-                If Not r.um Is Nothing Then
-                    articoli.SubItems.Add(r.um)
-                Else
-                    articoli.SubItems.Add("NULL")
+            Dim records = db.Anag_Articoli.Where(Function(x) x.bitEliminato = False).Select(Function(x) New With {
+                    .reparto = x.Anag_Reparti.strDescrizione,
+                    .um = x.Anag_Um.codeUm,
+                    .categoria = x.Anag_Gm.strDescrizione,
+                    .codice = x.strCodice,
+                    .descrizione = x.strDescrizione,
+                    .id = x.KeyId,
+                    .categoriaid = x.KeyIdAnag_Gm,
+                    .repartoid = x.KeyIdAnag_Reparti,
+                    .umid = x.KeyIdAnag_Um
+                })
+            If filtroAttivo = False Then
+                For Each r In records.OrderByDescending(Function(x) x.id).Take(200).ToList()
+                    Dim articoli As New ListViewItem(r.reparto)          'str descrizione della tabella reparto e str descrizione della tabella UM
+                    articoli.SubItems.Add(r.categoria)
+                    articoli.SubItems.Add(r.codice)
+                    articoli.SubItems.Add(r.descrizione)
+                    If Not r.um Is Nothing Then
+                        articoli.SubItems.Add(r.um)
+                    Else
+                        articoli.SubItems.Add("NULL")
+                    End If
+                    articoli.Tag = r.id
+                    lvwArticoli.Items.Add(articoli)
+                Next
+            Else
+                If CInt(cboFiltroReparto.SelectedValue) > 0 Then
+                    Dim reparto = CInt(cboFiltroReparto.SelectedValue)
+                    records = records.Where(Function(x) x.repartoid = reparto)
                 End If
-                articoli.Tag = r.id
-                lvwArticoli.Items.Add(articoli)
-            Next
+
+
+                If tbxFiltroDescrizione.Text.Trim() <> "" Then
+
+                    Dim desc = tbxFiltroDescrizione.Text.Trim()
+
+                    records = records.Where(Function(x) x.descrizione.Contains(desc))
+
+                End If
+
+                If CInt(cboFiltroCategoria.SelectedValue) > 0 Then
+
+                    Dim categoria = cboFiltroCategoria.SelectedValue.ToString()
+
+                    records = records.Where(Function(x) x.categoriaid = categoria)
+
+                End If
+
+                If CInt(cboFiltroUm.SelectedValue) > 0 Then
+
+                    Dim um = CInt(cboFiltroUm.SelectedValue)
+
+                    records = records.Where(Function(x) x.umid = um)
+
+                End If
+
+                If tbxFiltroCodiceArticolo.Text.Trim() <> "" Then
+
+                    Dim codice = tbxFiltroCodiceArticolo.Text.Trim()
+
+                    records = records.Where(Function(x) x.codice.Contains(codice))
+
+                End If
+                'NON SI CARICA BENE LA LIST VIEW PER VIA DI QUESTO CONTROLLA 
+                'Dim results = records.OrderByDescending(Function(x) x.id).Take(200).ToList()
+                lvwArticoli.Items.Clear()
+
+                For Each r In records.ToList()
+                    Dim articoli As New ListViewItem(r.reparto)          'str descrizione della tabella reparto e str descrizione della tabella UM
+                    articoli.SubItems.Add(r.categoria)
+                    articoli.SubItems.Add(r.codice)
+                    articoli.SubItems.Add(r.descrizione)
+                    If Not r.um Is Nothing Then
+                        articoli.SubItems.Add(r.um)
+                    Else
+                        articoli.SubItems.Add("NULL")
+                    End If
+                    articoli.Tag = r.id
+                    lvwArticoli.Items.Add(articoli)
+                Next
+            End If
 
         End Using
     End Sub
@@ -266,9 +336,20 @@ Public Class Form1
                 cboReparto.SelectedValue = selArticolo.KeyIdAnag_Reparti
                 cboCategoria.SelectedValue = selArticolo.KeyIdAnag_Gm
                 cboUm.SelectedValue = selArticolo.KeyIdAnag_Um
-
                 tbxCodiceArticolo.Text = selArticolo.strCodice
                 tbxDescrizione.Text = selArticolo.strDescrizione
+
+                cboFiltroReparto.SelectedValue = selArticolo.KeyIdAnag_Reparti
+                cboFiltroCategoria.SelectedValue = selArticolo.KeyIdAnag_Gm
+                cboFiltroUm.SelectedValue = selArticolo.KeyIdAnag_Um
+                tbxFiltroCodiceArticolo.Text = selArticolo.strCodice
+                tbxFiltroDescrizione.Text = selArticolo.strDescrizione
+            Else
+                cboReparto.SelectedValue = 0
+                cboCategoria.SelectedValue = 0
+                cboUm.SelectedValue = 0
+                tbxCodiceArticolo.Text = ""
+                tbxDescrizione.Text = ""
             End If
         End Using
     End Sub
@@ -281,99 +362,22 @@ Public Class Form1
         AggiornaFiltro()
     End Sub
 
-    Private Sub FiltraArticoli()
-
-        Using db As New MagTraceEntities()
-
-            Dim records = db.Anag_Articoli.Where(Function(x) x.bitEliminato = False).OrderByDescending(Function(x) x.KeyId).Take(200).Select(Function(x) New With {
-                .reparto = x.Anag_Reparti.strDescrizione,
-                .um = x.Anag_Um.codeUm,
-                .categoria = x.Anag_Gm.strDescrizione,
-                .codice = x.strCodice,
-                .descrizione = x.strDescrizione,
-                .id = x.KeyId,
-                .categoriaid = x.KeyIdAnag_Gm,
-                .repartoid = x.KeyIdAnag_Reparti,
-                .umid = x.KeyIdAnag_Um
-            })
-
-
-            If tbxFiltroDescrizione.Text.Trim() <> "" Then
-
-                Dim desc = tbxFiltroDescrizione.Text.Trim()
-
-                records = records.Where(Function(x) x.descrizione.Contains(desc))
-
-            End If
-
-            If CInt(cboFiltroCategoria.SelectedValue) > 0 Then
-
-                Dim categoria = CInt(cboFiltroCategoria.SelectedValue)
-
-                records = records.Where(Function(x) x.categoriaid = categoria)
-
-            End If
-
-            If CInt(cboFiltroReparto.SelectedValue) > 0 Then
-
-                Dim reparto = CInt(cboFiltroReparto.SelectedValue)
-
-                records = records.Where(Function(x) x.repartoid = reparto)
-
-            End If
-
-            If CInt(cboFiltroUm.SelectedValue) > 0 Then
-
-                Dim um = CInt(cboFiltroUm.SelectedValue)
-
-                records = records.Where(Function(x) x.umid = um)
-
-            End If
-
-            If tbxFiltroCodiceArticolo.Text.Trim() <> "" Then
-
-                Dim codice = tbxFiltroCodiceArticolo.Text.Trim()
-
-                records = records.Where(Function(x) x.codice.Contains(codice))
-
-            End If
-
-
-            lvwArticoli.Items.Clear()
-
-            For Each r In records
-                Dim articoli As New ListViewItem(r.reparto)          'str descrizione della tabella reparto e str descrizione della tabella UM
-                articoli.SubItems.Add(r.categoria)
-                articoli.SubItems.Add(r.codice)
-                articoli.SubItems.Add(r.descrizione)
-                If Not r.um Is Nothing Then
-                    articoli.SubItems.Add(r.um)
-                Else
-                    articoli.SubItems.Add("NULL")
-                End If
-                articoli.Tag = r.id
-                lvwArticoli.Items.Add(articoli)
-            Next
-
-        End Using
-
-    End Sub
+    'forse è da cancellare
 
     Private Sub AggiornaFiltro()
-
         Dim testo = tbxFiltroDescrizione.Text.Trim()
         Dim codice = tbxFiltroCodiceArticolo.Text.Trim()
         If testo.Length >= 3 OrElse
-           cboFiltroCategoria.SelectedIndex > 0 OrElse
-           cboFiltroReparto.SelectedIndex > 0 OrElse
-           cboFiltroUm.SelectedIndex > 0 Then
-
-            FiltraArticoli()
-
-        Else
-
+        codice.Length >= 3 OrElse
+        cboFiltroCategoria.SelectedIndex > 0 OrElse
+        cboFiltroReparto.SelectedIndex > 0 OrElse
+        cboFiltroUm.SelectedIndex > 0 Then
+            filtroAttivo = True
             RecoLoad()
-
+        Else
+            filtroAttivo = False
+            lvwArticoli.Items.Clear()
+            RecoLoad()
         End If
 
     End Sub
@@ -381,6 +385,7 @@ Public Class Form1
     Private Sub cboFiltroCategoria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroCategoria.SelectedIndexChanged
         AggiornaFiltro()
     End Sub
+
 
     Private Sub cboFiltroReparto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroReparto.SelectedIndexChanged
         AggiornaFiltro()
@@ -391,6 +396,15 @@ Public Class Form1
     End Sub
 
     Private Sub tbxFiltroCodiceArticolo_TextChanged(sender As Object, e As EventArgs) Handles tbxFiltroCodiceArticolo.TextChanged
+        AggiornaFiltro()
+    End Sub
+
+    Private Sub btnFilterCancel_Click(sender As Object, e As EventArgs) Handles btnFilterCancel.Click
+        tbxFiltroDescrizione.Text = ""
+        tbxFiltroCodiceArticolo.Text = ""
+        cboFiltroCategoria.SelectedIndex = 0
+        cboFiltroUm.SelectedIndex = 0
+        cboFiltroReparto.SelectedIndex = 0
         AggiornaFiltro()
     End Sub
 End Class
