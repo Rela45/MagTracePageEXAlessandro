@@ -7,7 +7,8 @@ Public Class Form1
     Dim edit As Boolean = False
     Dim settings As New SettingsData
     Dim filtroAttivo As Boolean = False
-
+    Dim formloaded As Boolean = False
+    Dim filterUpdate As Boolean = False
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If System.IO.File.Exists("Settings.xml") Then
             Dim xs As New XmlSerializer(GetType(SettingsData))
@@ -24,6 +25,7 @@ Public Class Form1
         End If
         lvwArticoli.Enabled = True
         grpDetails.Enabled = False
+        RecoLoad()
 #Region "caricamento CBO"
         'CARICAMENTO CBO
         Using db As New MagTraceEntities()
@@ -56,7 +58,7 @@ Public Class Form1
             cboFiltroUm.ValueMember = "KeyId"
         End Using
 #End Region
-        RecoLoad()
+        formloaded = True
     End Sub
 
     ''' <summary>
@@ -170,6 +172,8 @@ Public Class Form1
         cboCategoria.SelectedIndex = 0
         cboUm.SelectedIndex = 0
         cboReparto.SelectedIndex = 0
+        tbxFiltroCodiceArticolo.Clear()
+        tbxFiltroDescrizione.Clear()
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -249,12 +253,9 @@ Public Class Form1
                     MessageBox.Show("Descrizione obbligatoria")
                     Exit Sub
                 End If
-
-                If cboCategoria.SelectedValue > 0 Then
+                'modificato questo parametro siccome la categoria non è obbligatoria da db
+                If cboCategoria.SelectedValue >= 0 Then
                     articolo.KeyIdAnag_Gm = CInt(cboCategoria.SelectedValue)
-                Else
-                    MessageBox.Show("Categoria obbligatoria")
-                    Exit Sub
                 End If
 
                 If cboUm.SelectedValue > 0 Then
@@ -332,24 +333,24 @@ Public Class Form1
         Using db As New MagTraceEntities()
             Dim selArticolo = db.Anag_Articoli.Include("Anag_Reparti").Include("Anag_Gm").Include("Anag_Um").FirstOrDefault(Function(x) x.KeyId = idArticolo)
             If selArticolo IsNot Nothing Then
-
+                filterUpdate = True
                 cboReparto.SelectedValue = selArticolo.KeyIdAnag_Reparti
-                cboCategoria.SelectedValue = selArticolo.KeyIdAnag_Gm
+                'qui ci sono dei valori null nella listview e sulle tabelle possono effettivamente esserlo quindi vado a valorizzare 0 la cbo in caso sia null
+                If selArticolo.KeyIdAnag_Gm Is Nothing Then
+                    cboCategoria.SelectedIndex = 0
+                    cboFiltroCategoria.SelectedIndex = 0
+                Else
+                    cboCategoria.SelectedValue = selArticolo.KeyIdAnag_Gm
+                    cboFiltroCategoria.SelectedValue = selArticolo.KeyIdAnag_Gm
+                End If
                 cboUm.SelectedValue = selArticolo.KeyIdAnag_Um
                 tbxCodiceArticolo.Text = selArticolo.strCodice
                 tbxDescrizione.Text = selArticolo.strDescrizione
-
                 cboFiltroReparto.SelectedValue = selArticolo.KeyIdAnag_Reparti
-                cboFiltroCategoria.SelectedValue = selArticolo.KeyIdAnag_Gm
                 cboFiltroUm.SelectedValue = selArticolo.KeyIdAnag_Um
                 tbxFiltroCodiceArticolo.Text = selArticolo.strCodice
                 tbxFiltroDescrizione.Text = selArticolo.strDescrizione
-            Else
-                cboReparto.SelectedValue = 0
-                cboCategoria.SelectedValue = 0
-                cboUm.SelectedValue = 0
-                tbxCodiceArticolo.Text = ""
-                tbxDescrizione.Text = ""
+                filterUpdate = False
             End If
         End Using
     End Sub
@@ -358,9 +359,7 @@ Public Class Form1
         Form2.ShowDialog()
     End Sub
 
-    Private Sub tbxFiltroDescrizione_TextChanged(sender As Object, e As EventArgs) Handles tbxFiltroDescrizione.TextChanged
-        AggiornaFiltro()
-    End Sub
+
 
     'forse è da cancellare
 
@@ -373,7 +372,6 @@ Public Class Form1
         cboFiltroReparto.SelectedIndex > 0 OrElse
         cboFiltroUm.SelectedIndex > 0 Then
             filtroAttivo = True
-            RecoLoad()
         Else
             filtroAttivo = False
             lvwArticoli.Items.Clear()
@@ -382,29 +380,56 @@ Public Class Form1
 
     End Sub
 
-    Private Sub cboFiltroCategoria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroCategoria.SelectedIndexChanged
+    Private Sub tbxFiltroDescrizione_TextChanged(sender As Object, e As EventArgs) Handles tbxFiltroDescrizione.TextChanged
+        If formloaded = False Then Exit Sub
+        If filterUpdate Then Exit Sub
         AggiornaFiltro()
+        If filtroAttivo = True Then
+            RecoLoad()
+        End If
     End Sub
 
+    Private Sub cboFiltroCategoria_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroCategoria.SelectedIndexChanged
+        If formloaded = False Then Exit Sub
+        If filterUpdate Then Exit Sub
+        AggiornaFiltro()
+        If filtroAttivo = True Then
+            RecoLoad()
+        End If
+    End Sub
 
     Private Sub cboFiltroReparto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroReparto.SelectedIndexChanged
+        If filterUpdate Then Exit Sub
+        If formloaded = False Then Exit Sub
         AggiornaFiltro()
+        If filtroAttivo = True Then
+            RecoLoad()
+        End If
     End Sub
 
     Private Sub cboFiltroUm_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboFiltroUm.SelectedIndexChanged
+        If formloaded = False Then Exit Sub
+        If filterUpdate Then Exit Sub
         AggiornaFiltro()
+        If filtroAttivo = True Then
+            RecoLoad()
+        End If
     End Sub
 
     Private Sub tbxFiltroCodiceArticolo_TextChanged(sender As Object, e As EventArgs) Handles tbxFiltroCodiceArticolo.TextChanged
+        If formloaded = False Then Exit Sub
+        If filterUpdate Then Exit Sub
         AggiornaFiltro()
+        If filtroAttivo = True Then
+            RecoLoad()
+        End If
     End Sub
 
     Private Sub btnFilterCancel_Click(sender As Object, e As EventArgs) Handles btnFilterCancel.Click
-        tbxFiltroDescrizione.Text = ""
-        tbxFiltroCodiceArticolo.Text = ""
+        ClearBoxes()
         cboFiltroCategoria.SelectedIndex = 0
         cboFiltroUm.SelectedIndex = 0
         cboFiltroReparto.SelectedIndex = 0
-        AggiornaFiltro()
+        filtroAttivo = False
     End Sub
 End Class
